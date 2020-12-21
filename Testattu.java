@@ -9,8 +9,13 @@ public class Testattu {
 		String name = keyboard.nextLine();
 
 		System.out.println("Hyvaa huomenta, " + name);
-		keyboard.close();
-
+		System.out.println("Do you like Finnish food? ");
+		String prompt = keyboard.nextLine();
+		if (prompt.equalsIgnoreCase("yes") == true) {
+			System.out.println("Good for you!");
+		} else {
+			System.out.println("I haven't eaten it either, so I wouldn't know.");
+		}
 
 	}
 }
